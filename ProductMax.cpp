@@ -67,6 +67,8 @@ int main()
      cout << "Integers producing max result are : " << data[n-1] << " and " << data[n-2];
   }
 
+
+  return 0;
 }
 
 
