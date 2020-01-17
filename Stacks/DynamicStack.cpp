@@ -3,7 +3,8 @@
 
 /*
 Q: Implement a dynamic stack where user gives the Initial Capacity (IC) and Load Factor (LF)
-A:
+A: Calculate the threshold of the stack using LF and Capacity. Once the pushed element order exceeds this threshold,
+   double the capacity and calculate the new threshold based on this.
 */
 
 
@@ -14,9 +15,10 @@ using namespace std;
 
 int main()
 {
-    int x = (60/100.0)*18;
-    cout << x << endl;
-    StackDyn s(9,60);
+
+    int ic = 9; // initial capacity of stack is 9
+    int lf = 60; // load factor is 60%
+    StackDyn s(ic,lf);
 
     for(int i=1; i<15; i++)
     {
