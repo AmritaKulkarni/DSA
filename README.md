@@ -12,7 +12,7 @@ This project encapsulates the work of Amrita Kulkarni in practising DSA problems
 
 -> Duplicates : Print out elements in an array that are duplicated
 
-## 1) Stacks
+## 2) Stacks
 
 -> DynamicStack.cpp : Implement a dynamically growing stack
 
