@@ -31,16 +31,16 @@ public:
     {
         if(top==thresh-1)
         {
-            cout << "Threshold : " << thresh << " reached!!" << endl;
+            cout << "Threshold : " << thresh << " reached!!" << endl; // time to double the capacity
             cap = cap*2;
             thresh = (lf/100.0) * cap;
 
             arr_new = new int[cap];
-            for(int i=0; i<=top; i++)
+            for(int i=0; i<=top; i++) // move the old stack to new location with double capacity
             {
                 arr_new[i] = arr[i];
             }
-            delete[] arr;
+            delete[] arr; // deallocate old memory
             arr = arr_new;
 
             cout << "created a new stack with capacity : " << cap << endl;
@@ -56,7 +56,7 @@ public:
         }
         else
         {
-            checkThreshold();
+            checkThreshold(); // check if capacity is exceeded
 
             arr[++top] = x;
 
